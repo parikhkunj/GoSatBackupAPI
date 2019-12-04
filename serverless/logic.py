@@ -1,10 +1,10 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv("data/UC_Dataset_for_code.csv",index_col = ['u_id','d_id','d_v'])
+
 
 def main_process(gpa=0, actE=0, actC=0, satW=0, satM=0, satE=0, agc=0, hc=0):
-
+    df = pd.read_csv("data/UC_Dataset_for_code.csv",index_col = ['u_id','d_id','d_v'])
     n_uni = 9
     gpa = float(gpa)
     actE = float(actE)
@@ -54,7 +54,7 @@ def main_process(gpa=0, actE=0, actC=0, satW=0, satM=0, satE=0, agc=0, hc=0):
     elif agc<50 and agc>=40: agc = 40
     elif agc<40 and agc>=30: agc = 30
     elif agc<30 and agc>=0: agc = 0
-        
+
     if hc>=15: hc = 15
     elif hc<15 and hc>=10: hc = 10
     elif hc<10 and hc>=5: hc = 5
