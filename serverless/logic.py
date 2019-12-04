@@ -21,11 +21,11 @@ def main_process(gpa=0, actE=0, actC=0, satW=0, satM=0, satE=0, agc=0, hc=0):
     elif gpa<3.3 and gpa>=3.0: gpa = 3.0
     elif gpa<3.0 and gpa>=0: gpa = 0
 
-    if actE>=31: satE = 31
-    elif actE<31 and actE>=26: satE = 26
-    elif actE<26 and actE>=21: satE = 21
-    elif actE<21 and actE>=16: satE = 16
-    elif actE<16 and actE>=0: satE = 0
+    if actE>=31: actE = 31
+    elif actE<31 and actE>=26: actE = 26
+    elif actE<26 and actE>=21: actE = 21
+    elif actE<21 and actE>=16: actE = 16
+    elif actE<16 and actE>=0: actE = 0
 
     if actC>=31: actC = 31
     elif actC<31 and actC>=26: actC = 26
