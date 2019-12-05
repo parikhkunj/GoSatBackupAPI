@@ -14,6 +14,6 @@ api.add_resource(perRecomend, '/main_process/<gpa>/<actE>/<actC>/<satW>/<satM>/<
 
 if __name__ == '__main__':
      #app.run()
-     app.run(host='0.0.0.0', port=8080)
+     app.run(host='0.0.0.0')
 
 #main_process/10/60
