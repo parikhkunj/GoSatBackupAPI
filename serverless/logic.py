@@ -85,6 +85,6 @@ def main_process(gpa=0, actE=0, actC=0, satW=0, satM=0, satE=0, agc=0, hc=0):
             #print (f"i={i+1} j={j+1} a[j]={a[j]} b[i][j]= {b[i][j]}")
 
         c[i] = c[i] + uni_res/8
-        res = res + f" {i} : '{c[i]}', "
-    res = res + "99:'5.0'}"
+        res = res + f" {i} : \'{c[i]}\', "
+    res = res + "99:\'5.0\'}"
     return res
